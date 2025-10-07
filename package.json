@@ -1,0 +1,33 @@
+{
+  "name": "@nlevchuk/tg-message-removal",
+  "version": "1.0.1",
+  "description": "A plugin to remove messages from Telegram bots",
+  "repository": {
+    "url": "git+https://github.com/nlevchuk/tg-message-removal.git"
+  },
+  "type": "module",
+  "main": "build/index.js",
+  "files": ["build"],
+  "packageManager": "pnpm@9.9.0",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "ai",
+    "telegram",
+    "plugin",
+    "grammy"
+  ],
+  "author": "Nikita Levchuk <code@levch.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.18.5",
+    "grammy": "^1.38.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "grammy": ">=1.38 <2"
+  }
+}
